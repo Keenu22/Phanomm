@@ -1,0 +1,60 @@
+/* Main Container */
+.conveyer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100vw;
+  background: #6c5fd4;
+  /* Updated background color */
+  color: white;
+  /* White text */
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Individual Boxes */
+.conveyer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+  border-right: 2px solid white;
+  /* White vertical separator */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Remove Border from Last Box */
+.conveyer-box:last-child {
+  border-right: none;
+}
+
+/* Number Highlight */
+.conveyer-box span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  /* Updated to white */
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Text Below */
+.conveyer-box p {
+  font-size: 14px;
+  opacity: 0.9;
+  color: white;
+  /* Updated to white */
+}
+
+/* Active Animation */
+.conveyer-box.active {
+  opacity: 1;
+  transform: translateY(0);
+}

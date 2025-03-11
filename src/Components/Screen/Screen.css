@@ -1,0 +1,32 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 20px;
+  position: relative;
+}
+
+.logo-track {
+  display: flex;
+  gap: 30px;
+  animation: slide 30s linear infinite;
+}
+
+/* Animation to move logos from right to left */
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logo-image {
+  width: 120px;
+  height: auto;
+  max-width: 100%;
+
+}

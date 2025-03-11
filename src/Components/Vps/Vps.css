@@ -1,0 +1,122 @@
+/* VPS Section */
+.vps-section {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff7eb3, #ff758c);
+  background-size: 300% 300%;
+  animation: gradientBG 6s infinite ease-in-out;
+}
+
+/* Left Half */
+.left-half {
+  width: 50vw;
+  display: flex;
+}
+
+/* Right Half */
+.right-half {
+  width:50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 50px;
+  /* Adjusted margin */
+}
+
+/* Profile Info */
+.profile-info {
+  display: flex;
+  padding:5px;
+}
+
+/* Profile Image */
+.profile-img {
+  height:fit-content;
+  
+}
+
+/* Subtitle */
+.vps-subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Heading */
+.vps-heading {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Button */
+.vps-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.vps-button:hover {
+  background-color: #0056b3;
+}
+
+/* Arrow */
+.arrow {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+/* Ratings */
+.ratings {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+  .vps-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left-half,
+  .right-half {
+    width: 90%;
+    text-align: center;
+    padding: 10px 0;
+  }
+    .profile-img {
+      height: 100px;
+      width:150px;
+    }
+
+
+  .profile-info {
+    flex-direction: row;
+  }
+
+  .right-half {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .vps-heading {
+    font-size: 28px;
+  }
+
+  .vps-button {
+    width: 80%;
+    font-size: 14px;
+  }
+}

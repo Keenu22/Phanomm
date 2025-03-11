@@ -1,0 +1,118 @@
+/* Main section layout */
+.service-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  /* Full viewport height */
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+/* Left Half (Remaining Space) */
+.left-half {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.heading{
+  color:#6C5FD4;
+}
+.service-section p{
+  color:black;
+}
+
+/* Appointment Button */
+.appointment-button {
+  padding: 12px 20px;
+  background-color: #6C5FD4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.appointment-button:hover {
+  background-color: #0056b3;
+}
+
+/* Right Half (Fixed 60vh x 60vw) */
+.right-half {
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding:30px;
+}
+
+/* Grid Layout for Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+  padding: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.arrow {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Swiper Main Slider */
+.main-slider {
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .service-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-half {
+    text-align: center;
+    align-items: center;
+  }
+
+  .right-half {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .card {
+    height: 100px;
+    font-size: 14px;
+  }
+
+  .appointment-button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
